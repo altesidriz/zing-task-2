@@ -65,7 +65,7 @@ const Navbar = () => {
           className="bg-black w-8 h-0.5 origin-left"></motion.div>
       </button>
       {open &&
-        <div className="absolute pr-20 pt-10 w-1/2 h-screen top-[70px] bg-[#DCDCDC] right-0 flex flex-col justify-start items-end gap-10">
+        <div className="absolute pr-20 pt-10 w-1/2 h-screen top-[70px] bg-[#DCDCDC] right-0 flex flex-col justify-start items-end gap-10 z-50">
           <Link href="#" className="font-medium text-base">Product</Link>
           <Link href="#" className="font-medium text-base">Pricing</Link>
           <Link href="#" className="font-medium text-base">Company</Link>
