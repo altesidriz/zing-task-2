@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='relative px-7 md:px-36 flex flex-row h-20 justify-between items-center bg-[#DCDCDC] border-2'>
+    <div className='relative px-7 md:px-36 flex flex-row h-20 justify-between items-center bg-[#DCDCDC]'>
       <div className="w-2/3 flex item-center justify-start gap-24">
         <div className="text-[#000000] text-[28px] font-black">Roooby</div>
         <div className="hidden md:flex items-center gap-5">
@@ -50,7 +50,7 @@ const Navbar = () => {
       {/* BUTTONS */}
       <div className="hidden lg:flex justify-around gap-5">
         <button className="p-2 w-auto font-bold text-xs bg-white border-[#dcdcdc] border-[1px] rounded-md">Log In</button>
-        <button className="p-2 w-auto font-bold text-xs text-white bg-[#150050] rounded-md">Try forFree</button>
+        <button className="p-2 w-auto font-bold text-xs text-white bg-[#150050] rounded-md">Try for Free</button>
       </div>
       {/* RESPONSIVE BUTTON */}
       <button onClick={() => setOpen((prev) => !prev)} className="w-10 h-6 flex flex-col justify-between z-50 relative md:hidden">
