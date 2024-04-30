@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import { FcCheckmark } from 'react-icons/fc';
-import { MdAccountBalanceWallet } from "react-icons/md";
+import { MdAccountBalanceWallet } from 'react-icons/md';
 
 const About = () => {
     return (
-        <div className='m-auto w-screen h-auto bg-white pt-3'>
-            <div className="pt-5 m-auto max-w-[1140px] h-auto flex flex-row gap-6 justify-center items-end border-t-4 border-[#404040]">
+        <div className='m-auto w-screen h-auto bg-white pt-32'>
+            <div className="pt-12 m-auto max-w-[1140px] h-auto flex flex-row gap-24 justify-center items-end border-t-2 border-[#787878]">
                 {/* TEXT */}
                 <div className="w-[487px] flex flex-col">
                     <span className="p-2 w-max bg-[#FFE377] text-sm tracking-wider rounded-md text-[#404040]">SALES</span>
