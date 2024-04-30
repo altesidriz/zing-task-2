@@ -1,16 +1,16 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const Description = () => {
   return (
     <div className='m-auto w-screen h-auto bg-[#150050]'>
       <div className="p-5 py-10 m-auto max-w-[1440px] h-auto flex flex-col gap-6 items-center">
         {/* TEXT */}
-        <div className="w-[1200px] h-48 flex flex-row items-center justify-center text-white">
-            <h3 className="w-1/2 font-bold text-5xl">Here&apos;s how Roooby can benefit your business</h3>
-            <p className="pt-20 w-96 text-sm">Build more meaningful and lasting relationships — better understand their needs, identify new opportunities to help, address any problems faster.</p>
+        <div className="w-[900px] md:w-[1200px] h-52 lg:h-44 flex flex-col lg:flex-row items-center justify-center text-white">
+            <h3 className=" w-96 lg:w-1/2 font-bold text-3xl md:text-4xl lg:text-5xl">Here&apos;s how Roooby can benefit your business</h3>
+            <p className="pt-4 lg:pt-20 w-96 text-sm">Build more meaningful and lasting relationships — better understand their needs, identify new opportunities to help, address any problems faster.</p>
         </div>
         {/* CARDS */}
-        <div className="flex flex-row gap-3 justify-center items-center">
+        <div className="flex flex-col lg:flex-row gap-3 justify-center items-center">
             <div className="py-8 px-5 w-[374px] h-[439px] flex flex-col gap-3 rounded-xl justify-around bg-yellow-300">
                 <Image src="/card-icons/Face.png" alt="face-icon" width={63} height={72}/>
                 <div className="h-[1px] w-full bg-black"></div>
