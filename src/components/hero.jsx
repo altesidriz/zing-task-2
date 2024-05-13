@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Hero = () => {
     return (
-        <div className='max-w-[1440px] relative pt-9 px-7 md:px-36 flex flex-col h-auto justify-center items-center md:items-start bg-[#DCDCDC]'>
+        <div className='m-auto max-w-[1440px] relative pt-9 px-7 md:px-36 flex flex-col h-auto justify-center items-center md:items-start bg-[#DCDCDC]'>
             <div className="hidden md:block absolute top-[36px] left-[820px] w-[595px] h-[482px] overflow-visible border-8 border-black rounded-3xl">
                 <Image src="/hero-img.png" alt="/" fill className="object-cover rounded-3xl" />
             </div>

@@ -4,7 +4,7 @@ import { FcCheckmark } from 'react-icons/fc';
 const About3 = () => {
     return (
         <div className='m-auto w-screen h-auto bg-white pt-32'>
-            <div className="pt-12 m-auto max-w-[1140px] h-auto flex flex-row gap-24 justify-center items-end border-t-2 border-[#787878]">
+            <div className="pt-12 pb-12 m-auto max-w-[1140px] h-auto flex flex-row gap-24 justify-center items-end border-t-2 border-[#787878]">
                 {/* TEXT */}
                 <div className="w-[487px] flex flex-col">
                     <span className="p-2 w-max bg-[#FFE377] text-sm tracking-wider rounded-md text-[#404040]">SERVICE</span>
@@ -30,6 +30,7 @@ const About3 = () => {
                             <h3 className='font-bold text-lg'>Lead Discovered</h3>
                             <div className='w-[175px] h-2 bg-[#295F6C] rounded-xl'></div>
                         </div>
+                        <div className='w-[372px] h-border'></div>
                     </div>
                 </div>
             </div>
