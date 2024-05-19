@@ -1,12 +1,14 @@
 import CardStarter from './_components/cardStarter';
 import CardProfessional from './_components/cardProfessional';
 import CardEnterprise from './_components/cardEnterprise';
+import Questions from './_components/questions';
+import Banner from '@/components/banner';
 
 const Pricing = () => {
   return (
     <div className='m-auto w-screen h-auto bg-[#F4F4F4]'>
       <div className="py-12 m-auto max-w-[1140px] h-auto flex flex-col items-center justify-around gap-10">
-        {/*Heaader */}
+        {/*Header */}
         <div className="w-full h-auto flex flex-row items-end justify-between">
           <div className="flex flex-col w-2/3">
             <h1 className="text-6xl leading-[74px] text-black font-bold">Choose your right plan</h1>
@@ -16,7 +18,7 @@ const Pricing = () => {
             <p>Built with love for growing businesses. Check out the Roooby CRM pricing grid below. Switch between plans at any time.</p>
           </div>
         </div>
-        {/* Plan Card(s) */}
+        {/* Plan Cards */}
         <div className="flex flex-row items-center justify-between gap-8">
           <CardStarter />
           <CardProfessional />
@@ -29,6 +31,22 @@ const Pricing = () => {
           <button className='bg-[#150050] p-4 felx items-center justify-center text-sm text-white rounded-lg'>Compare plans</button>
         </div>
       </div>
+      {/* Frequently Question */}
+      <div className='m-auto w-screen h-auto bg-white '>
+        <div className='py-16 m-auto max-w-[1140px] h-auto flex flex-col items-center justify-around gap-10'>
+          <div className='w-full h-auto'>
+            <h1 className='w-3/5 font-bold text-6xl leading-normal self-start'>Frequently asked question</h1>
+          </div>
+          <div className='w-4/5 self-end'>
+            <Questions />
+            <Questions />
+            <Questions />
+            <Questions />
+          </div>
+        </div>
+      </div>
+      {/* Banner */}
+      <Banner />
     </div>
   );
 };
