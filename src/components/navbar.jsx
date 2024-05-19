@@ -38,10 +38,10 @@ const Navbar = () => {
   return (
     <div className='relative px-7 md:px-36 flex flex-row h-20 justify-between items-center bg-[#DCDCDC]'>
       <div className="w-2/3 flex item-center justify-start gap-24">
-        <div className="text-[#000000] text-[28px] font-black">Roooby</div>
+        <Link href="/" className="text-[#000000] text-[28px] font-black">Roooby</Link>
         <div className="hidden md:flex items-center gap-5">
           <Link href="#" className="font-medium text-sm">Product</Link>
-          <Link href="#" className="font-medium text-sm">Pricing</Link>
+          <Link href="/pricing" className="font-medium text-sm">Pricing</Link>
           <Link href="#" className="font-medium text-sm">Company</Link>
           <Link href="#" className="font-medium text-sm">Recources</Link>
           <Link href="#" className="font-medium text-sm">Contact</Link>
@@ -67,7 +67,7 @@ const Navbar = () => {
       {open &&
         <div className="absolute pr-20 pt-10 w-1/2 h-screen top-[70px] bg-[#DCDCDC] right-0 flex flex-col justify-start items-end gap-10 z-50">
           <Link href="#" className="font-medium text-base">Product</Link>
-          <Link href="#" className="font-medium text-base">Pricing</Link>
+          <Link href="/pricing" className="font-medium text-base">Pricing</Link>
           <Link href="#" className="font-medium text-base">Company</Link>
           <Link href="#" className="font-medium text-base">Recources</Link>
           <Link href="#" className="font-medium text-base">Contact</Link>
