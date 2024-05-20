@@ -43,7 +43,7 @@ const Navbar = () => {
           <Link href="#" className="font-medium text-sm">Product</Link>
           <Link href="/pricing" className="font-medium text-sm">Pricing</Link>
           <Link href="#" className="font-medium text-sm">Company</Link>
-          <Link href="#" className="font-medium text-sm">Recources</Link>
+          <Link href="/blog" className="font-medium text-sm">Blog</Link>
           <Link href="#" className="font-medium text-sm">Contact</Link>
         </div>
       </div>
@@ -69,7 +69,7 @@ const Navbar = () => {
           <Link href="#" className="font-medium text-base">Product</Link>
           <Link href="/pricing" className="font-medium text-base">Pricing</Link>
           <Link href="#" className="font-medium text-base">Company</Link>
-          <Link href="#" className="font-medium text-base">Recources</Link>
+          <Link href="/blog" className="font-medium text-base">Blog</Link>
           <Link href="#" className="font-medium text-base">Contact</Link>
         </div>
       }
