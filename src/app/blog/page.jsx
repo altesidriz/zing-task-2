@@ -16,9 +16,9 @@ const Blog = async () => {
     const firstArticle = posts.shift();
     const secondSection = posts.splice(0,6);
     const third = posts.shift();
-    const fourth = posts.splice(0,6);
+    const fourth = posts.splice(0,3);
     const fifth = posts.splice(0,3);
-    console.log(secondSection);
+
     return (
         <div className='m-auto w-screen h-auto bg-[#F4F4F4]'>
             <div className="pt-12 m-auto max-w-[1140px] h-auto flex flex-col items-center justify-around gap-5">
@@ -57,9 +57,9 @@ const Blog = async () => {
             </div>
             {/* THIRD ARTICLE SECTION */}
             <div className='m-auto w-screen h-auto bg-white'>
-                <div className="m-auto pt- max-w-[1140px] h-auto flex flex-col items-center justify-between gap-28 flex-wrap">
-                    <span className="font-bold text-sm tracking-wider text-[#787878]">NEWS</span>
+                <div className="m-auto pt-12 max-w-[1140px] h-[500px] flex flex-row items-center justify-between gap-28 flex-wrap">
                     <div className="flex-1">
+                    <span className="font-bold text-sm tracking-wider text-[#787878]">NEWS</span>
                         <div className="w-full h-auto flex flex-col gap-4">
                             <div className="w-full h-[1px] bg-[#787878]"></div>
                             <div className="relative w-full h-[241px]">
@@ -69,7 +69,7 @@ const Blog = async () => {
                             <p className="font-medium text-base">29 Jun 2024,<span className="text-[#787878]"> by Joshua Nash</span></p>
                         </div>
                     </div>
-                    <div className='h-auto flex-1 flex flex-col justify-between'>
+                    <div className='h-auto flex-1 flex flex-col justify-around gap-4'>
                         {fourth.map(data=>(
                             <NoImgArticle key={data.id} title={data.title}/>
                         ))}
@@ -78,7 +78,7 @@ const Blog = async () => {
             </div>
             {/* SECOND ARTICLES SECTION */}
             <div className='m-auto w-screen h-auto bg-white'>
-                <div className="m-auto pt-8 max-w-[1140px] h-auto flex flex-row items-center justify-between gap-y-28 flex-wrap">
+                <div className="m-auto py-8 max-w-[1140px] h-auto flex flex-row items-center justify-between gap-y-28 flex-wrap">
                     {fifth.map(data=> (
                         <Article key={data.id} width="300px" title={data.title}/>
                     ))}
