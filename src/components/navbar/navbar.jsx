@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import Links from './links/Links';
 
 
 const Navbar = () => {
@@ -39,13 +40,7 @@ const Navbar = () => {
     <div className='relative px-7 md:px-36 flex flex-row h-20 justify-between items-center bg-[#DCDCDC]'>
       <div className="w-2/3 flex item-center justify-start gap-24">
         <Link href="/" className="text-[#000000] text-[28px] font-black">Roooby</Link>
-        <div className="hidden md:flex items-center gap-5">
-          <Link href="#" className="font-medium text-sm">Product</Link>
-          <Link href="/pricing" className="font-medium text-sm">Pricing</Link>
-          <Link href="#" className="font-medium text-sm">Company</Link>
-          <Link href="/blog" className="font-medium text-sm">Blog</Link>
-          <Link href="#" className="font-medium text-sm">Contact</Link>
-        </div>
+        <Links />
       </div>
       {/* BUTTONS */}
       <div className="hidden lg:flex justify-around gap-5">
@@ -70,7 +65,7 @@ const Navbar = () => {
           <Link href="/pricing" className="font-medium text-base">Pricing</Link>
           <Link href="#" className="font-medium text-base">Company</Link>
           <Link href="/blog" className="font-medium text-base">Blog</Link>
-          <Link href="#" className="font-medium text-base">Contact</Link>
+          <Link href="/contact" className="font-medium text-base">Contact</Link>
         </div>
       }
     </div>
